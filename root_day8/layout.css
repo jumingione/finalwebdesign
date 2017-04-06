@@ -1,0 +1,100 @@
+
+
+/* For mobile phones: */
+
+
+@media only screen and (max-width: 500px) {
+
+	
+	#s2 article {
+	width: 85%;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-column-count: 1; /*chrome, safari and opera*/
+	-moz-column-count: 1; /*firefox*/
+	column-count: 1;
+}
+
+#s3 article {
+	width: 75%;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-column-count: 1; /*chrome, safari and opera*/
+	-moz-column-count: 1; /*firefox*/
+	column-count: 1;
+	float: left;
+}
+
+aside {
+		width: 30%;
+		float: right;
+		padding: 10px;
+	}
+}
+
+/*===TABLET VIEW SECOND - ALWAYS===*/
+/*481px to 768px - inherits styles from: Mobile Layout*/
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+#s2 article {
+	width: 85%;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-column-count: 2; /*chrome, safari and opera*/
+	-moz-column-count: 2; /*firefox*/
+	column-count: 2;
+}
+
+#s3 article {
+	width: 75%;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-column-count: 2; /*chrome, safari and opera*/
+	-moz-column-count: 2; /*firefox*/
+	column-count: 2;
+	float: left;
+}
+
+aside {
+		width: 25%;
+		float: right;
+		padding: 20px;
+	}
+}
+/*===DESKTOP VIEW TIRDH - ALWAYS===*/
+/* 769px to a max of 1200px - inherits styles from: Mobile Layout and Tablet Layout*/
+
+@media only screen and (min-width: 768px) {
+
+#s2 article {
+	width: 85%;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-column-count: 3; /*chrome, safari and opera*/
+	-moz-column-count: 3; /*firefox*/
+	column-count: 3;
+}
+
+#s3 article {
+	width: 75%;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-column-count: 3; /*chrome, safari and opera*/
+	-moz-column-count: 3; /*firefox*/
+	column-count: 3;
+	float: left;
+}
+
+aside {
+		width: 25%;
+		float: right;
+		padding: 20px;
+	}
+}

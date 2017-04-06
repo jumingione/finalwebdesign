@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Form Example</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="layout.css">
+
+</head>
+
+<!--https://www.html5rocks.com/en/tutorials/forms/html5forms/-->
+<!--https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp - menus options-->
+
+<body>	
+	
+	<!-- The overlay -->
+		<nav id="myNav" class="overlay">
+
+		  <!-- Button to close the overlay navigation -->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <!-- Overlay content -->
+		  	   <div class="overlay-content">
+		  	 <a href="../root_day8/index.html">Home</a>
+			<a href="../root_day8/page2.html">About</a>
+			<a href="../root_day8/page3.html">Services</a>
+			<a href="../root_day8/page4.html">Contact</a>
+			</div>
+	</nav>
+	
+	<span id="trigger" onclick="openNav()">☰</span>
+	
+	<div id="formwrapper">
+	
+		<form action="MAILTO:ju_mingione@hotmail.com" method="post" enctype="text/plain" validate>	
+			
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
+			
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
+			
+			<label for="mail">Email</label>
+			<input type="email" id="mail" name="email" placeholder="youremail@server.com" required>
+			
+			<label for="tarea">Comments</label>
+			<textarea placeholder="Talk to us!"></textarea>
+			
+			<div>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+			</div>
+		</form>	
+	</div>	
+	
+	<footer> Mingione Winery Ltda.
+		<br>
+		<br> 
+		Tel: 534.999.1234
+		<br>
+		<br>
+		contact@mingionewinery.com
+	</footer>
+	
+<script>
+	/* Open when someone clicks on the span element */
+	function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+	}	
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+	function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+	}
+</script>
+</body>
+</html>
+
